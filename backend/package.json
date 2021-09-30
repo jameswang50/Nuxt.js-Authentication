@@ -8,9 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=PRODUCTION MONGO_USER=mohammadali  MONGO_PASS=20212021 MONGO_DB=auth node app.js",
+    "start": "NODE_ENV=PRODUCTION node app.js",
     "start-server": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "node app.js"
   },
   "keywords": [],
   "author": "",

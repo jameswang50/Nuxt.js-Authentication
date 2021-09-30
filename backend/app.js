@@ -31,7 +31,7 @@ app.use((error, req, res, next) => {
 });
 
 // connect to db
-const MONGOOSE_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASS}@cluster0.4r3gv.mongodb.net/${process.env.MONGO_DB}`;
+const MONGOOSE_URI = `mongodb://localhost:27017/test`;
 mongoose
   .connect(MONGOOSE_URI)
   .then((result) => {

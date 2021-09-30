@@ -44,9 +44,9 @@
                 <nuxt-link
                   class="nav-link active"
                   aria-current="page"
-                  to="/profile"
+                  to="/users"
                 >
-                  Profile
+                  Users
                 </nuxt-link>
               </li>
             </template>

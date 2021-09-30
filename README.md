@@ -24,14 +24,14 @@ and Back-end has implemented by these features:
 # 
 ### How to run Front-end and Back-end projects?
 
-For starting the Expres.js project: 
+For starting the backend project: 
 
 * npm install 
 
 * npm start
 
 
-And for running the Nuxt.js project you just need to execute these two commands:
+And for running the frontend project you just need to execute these two commands:
 
 * npm install 
 

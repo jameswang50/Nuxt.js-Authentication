@@ -72,9 +72,23 @@ exports.postLogin = async (req, res, next) => {
 exports.getUser = (req, res, next) => {
   res.status(200).json({
     user: {
-      id: loadedUser._id,
-      fullname: loadedUser.fullname,
-      email: loadedUser.email,
+      id: loadedUser?._id,
+      fullname: loadedUser?.fullname,
+      email: loadedUser?.email,
     },
   });
 };
+
+exports.getAllUsers = async (req, res, next) => {
+  try {
+    await userModel.find({}, function(err, users) {
+      res.status(200).json(users);
+    });
+    
+  } catch (err) {
+    if (!err.statusCode) {
+      err.statusCode = 500;
+    }
+    next(err);
+  }
+}
